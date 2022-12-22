@@ -1,6 +1,13 @@
 import * as React from 'react';
 
-import { Box, Stack, Typography, SvgIcon, SvgIconProps } from '@mui/material';
+import {
+  Box,
+  Stack,
+  Typography,
+  SvgIcon,
+  SvgIconProps,
+  TypographyProps,
+} from '@mui/material';
 
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -24,32 +31,32 @@ const UxIcon = (props: SvgIconProps) => (
       <path
         d="M4.5 6.25H2C1.72386 6.25 1.5 6.47386 1.5 6.75V9.25C1.5 9.52614 1.72386 9.75 2 9.75H4.5C4.77614 9.75 5 9.52614 5 9.25V6.75C5 6.47386 4.77614 6.25 4.5 6.25Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13.5 2.5H10.5C10.2239 2.5 10 2.72386 10 3V6C10 6.27614 10.2239 6.5 10.5 6.5H13.5C13.7761 6.5 14 6.27614 14 6V3C14 2.72386 13.7761 2.5 13.5 2.5Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13.5 9.5H10.5C10.2239 9.5 10 9.72386 10 10V13C10 13.2761 10.2239 13.5 10.5 13.5H13.5C13.7761 13.5 14 13.2761 14 13V10C14 9.72386 13.7761 9.5 13.5 9.5Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M5 8H7.5"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M10 11.5H9.00001C8.8028 11.5008 8.60737 11.4626 8.42501 11.3875C8.24265 11.3124 8.07696 11.202 7.93751 11.0625C7.79806 10.923 7.6876 10.7574 7.61251 10.575C7.53742 10.3926 7.49919 10.1972 7.50001 10V6C7.49919 5.80278 7.53742 5.60736 7.61251 5.425C7.6876 5.24263 7.79806 5.07695 7.93751 4.93749C8.07696 4.79804 8.24265 4.68758 8.42501 4.61249C8.60737 4.53741 8.8028 4.49917 9.00001 4.5H10"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>
@@ -70,20 +77,20 @@ const UiIcon = (props: SvgIconProps) => (
       <path
         d="M6.5 6.5V13"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M2 6.5H14"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M13.5 3H2.5C2.22386 3 2 3.22386 2 3.5V12.5C2 12.7761 2.22386 13 2.5 13H13.5C13.7761 13 14 12.7761 14 12.5V3.5C14 3.22386 13.7761 3 13.5 3Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>
@@ -104,26 +111,26 @@ const UxResearchIcon = (props: SvgIconProps) => (
       <path
         d="M12.5 14H3.5C3.36739 14 3.24021 13.9473 3.14645 13.8536C3.05268 13.7598 3 13.6326 3 13.5V2.5C3 2.36739 3.05268 2.24021 3.14645 2.14645C3.24021 2.05268 3.36739 2 3.5 2H9.5L13 5.5V13.5C13 13.6326 12.9473 13.7598 12.8536 13.8536C12.7598 13.9473 12.6326 14 12.5 14Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M9.5 2V5.5H13"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M8.98767 10.4875L9.98767 11.4875"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M7.75 11C8.7165 11 9.5 10.2165 9.5 9.25C9.5 8.2835 8.7165 7.5 7.75 7.5C6.7835 7.5 6 8.2835 6 9.25C6 10.2165 6.7835 11 7.75 11Z"
         stroke="white"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </g>
     <defs>
@@ -134,8 +141,15 @@ const UxResearchIcon = (props: SvgIconProps) => (
   </SvgIcon>
 );
 
-const HeadingOutlined = ({ children, ...restProps }) => (
-  <>
+interface HeadingOutlinedProps {
+  children?: React.ReactNode;
+}
+
+const HeadingOutlined = ({
+  children,
+  ...restProps
+}: HeadingOutlinedProps & TypographyProps) => (
+  <Box>
     <Typography
       variant="h5"
       {...restProps}
@@ -159,10 +173,10 @@ const HeadingOutlined = ({ children, ...restProps }) => (
         marginBottom: 4,
       }}
     />
-  </>
+  </Box>
 );
 
-const Text = (typographyProps) => (
+const Text = (typographyProps: TypographyProps) => (
   <Typography
     {...typographyProps}
     sx={{
@@ -177,7 +191,17 @@ const Text = (typographyProps) => (
   </Typography>
 );
 
-const ArrowListItem = ({ children, arrowProps, typographyProps }) => (
+interface ArrowListItemProps {
+  children?: React.ReactNode;
+  arrowProps?: SvgIconProps;
+  typographyProps?: TypographyProps;
+}
+
+const ArrowListItem = ({
+  children,
+  arrowProps,
+  typographyProps,
+}: ArrowListItemProps) => (
   <Box sx={{ display: 'flex', alignItems: 'center' }}>
     <ArrowForwardIcon
       {...arrowProps}
@@ -187,7 +211,11 @@ const ArrowListItem = ({ children, arrowProps, typographyProps }) => (
   </Box>
 );
 
-const SoftwareListItem = ({ children }) => (
+interface SoftwareListItemProps {
+  children?: React.ReactNode;
+}
+
+const SoftwareListItem = ({ children }: SoftwareListItemProps) => (
   <Box sx={{ display: 'flex', alignItems: 'stretch' }}>
     <ArrowForwardIcon sx={{ marginX: 1 }} />
     <Box
@@ -203,6 +231,11 @@ const SoftwareListItem = ({ children }) => (
     </Box>
   </Box>
 );
+
+interface CursoProps {
+  title?: ReactNode;
+  date?: ReactNode;
+}
 
 const Curso = ({ title, date }) => (
   <Box>
