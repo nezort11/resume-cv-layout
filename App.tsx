@@ -27,7 +27,7 @@ const UxIcon = (props: SvgIconProps) => (
     viewBox="0 0 16 16"
     sx={{ width: 16, height: 16, fill: 'none', ...props?.sx }}
   >
-    <g clip-path="url(#clip0_1_246)">
+    <g clipPath="url(#clip0_1_246)">
       <path
         d="M4.5 6.25H2C1.72386 6.25 1.5 6.47386 1.5 6.75V9.25C1.5 9.52614 1.72386 9.75 2 9.75H4.5C4.77614 9.75 5 9.52614 5 9.25V6.75C5 6.47386 4.77614 6.25 4.5 6.25Z"
         stroke="white"
@@ -73,7 +73,7 @@ const UiIcon = (props: SvgIconProps) => (
     {...props}
     sx={{ width: 16, height: 16, fill: 'none', ...props?.sx }}
   >
-    <g clip-path="url(#clip0_1_255)">
+    <g clipPath="url(#clip0_1_255)">
       <path
         d="M6.5 6.5V13"
         stroke="white"
@@ -107,7 +107,7 @@ const UxResearchIcon = (props: SvgIconProps) => (
     {...props}
     sx={{ width: 16, height: 16, fill: 'none', ...props?.sx }}
   >
-    <g clip-path="url(#clip0_1_262)">
+    <g clipPath="url(#clip0_1_262)">
       <path
         d="M12.5 14H3.5C3.36739 14 3.24021 13.9473 3.14645 13.8536C3.05268 13.7598 3 13.6326 3 13.5V2.5C3 2.36739 3.05268 2.24021 3.14645 2.14645C3.24021 2.05268 3.36739 2 3.5 2H9.5L13 5.5V13.5C13 13.6326 12.9473 13.7598 12.8536 13.8536C12.7598 13.9473 12.6326 14 12.5 14Z"
         stroke="white"
@@ -233,8 +233,8 @@ const SoftwareListItem = ({ children }: SoftwareListItemProps) => (
 );
 
 interface CursoProps {
-  title?: ReactNode;
-  date?: ReactNode;
+  title?: React.ReactNode;
+  date?: React.ReactNode;
 }
 
 const Curso = ({ title, date }) => (
